@@ -10,7 +10,9 @@
 *.tmp
 *.tmp.*
 log.txt
-
+ionic.config.json
+package.json
+package-lock.json
 # NPM (Node Package Manager) files
 npm-debug.log*
 node_modules/

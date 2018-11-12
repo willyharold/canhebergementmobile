@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { DetailshotelPage } from '../pages/detailshotel/detailshotel';
+import { HebergementPage } from '../pages/hebergement/hebergement';
 //import { SuperTabsModule } from  'ionic2-super-tabs' ;
 
 @Component({
