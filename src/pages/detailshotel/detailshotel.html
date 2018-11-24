@@ -1,12 +1,17 @@
 <ion-header>
         <ion-item style="background-image: url('../assets/imgs/560_315.jpg') !important; height:200px">
-            <ion-navbar transparent>
+            <ion-navbar transparent hideBackButton>
+                <ion-buttons left>
+                    <button ion-button navPop icon-only>
+                              <ion-icon  md="md-arrow-back" color="primary"></ion-icon>
+                    </button>
+                  </ion-buttons>
             </ion-navbar>
         </ion-item>
     
   </ion-header>
   
-  <ion-content  >
+  <ion-content style="background-color: rgba(80, 6, 87,1);color:white !important;" >
       <div style="margin-top: 20px;text-align:center">
             <span style="font-style: italic">
                     Hayao Miyazaki • 1988
@@ -19,59 +24,27 @@
              </span>
       </div>
      <br>
-      <ion-list>
+      <ion-list >
             <ion-item>
               <ion-thumbnail item-start>
                 <img src="../../assets/imgs/560_315.jpg"/>
               </ion-thumbnail>
-              <h2>My Neighbor Totoro</h2>
-              <p>Hayao Miyazaki • 1988</p>
-              <button ion-button  item-end color="violet">Réserver</button>
+              <h2>Chambre double</h2>
+              <p>15000 XFA</p>
+              <button ion-button  item-end color="yellow">Réserver</button>
             </ion-item>
             <ion-item>
-                    <ion-thumbnail item-start>
-                      <img src="../../assets/imgs/560_315.jpg"/>
-                    </ion-thumbnail>
-                    <h2>My Neighbor Totoro</h2>
-                    <p>Hayao Miyazaki • 1988</p>
-                    <button ion-button clear item-end>Réserver</button>
-                  </ion-item>
-                  <ion-item>
-                        <ion-thumbnail item-start>
-                          <img src="../../assets/imgs/560_315.jpg"/>
-                        </ion-thumbnail>
-                        <h2>My Neighbor Totoro</h2>
-                        <p>Hayao Miyazaki • 1988</p>
-                        <button ion-button clear item-end>Réserver</button>
-                      </ion-item>
-                      <ion-item>
-                            <ion-thumbnail item-start>
-                              <img src="../../assets/imgs/560_315.jpg"/>
-                            </ion-thumbnail>
-                            <h2>My Neighbor Totoro</h2>
-                            <p>Hayao Miyazaki • 1988</p>
-                            <button ion-button clear item-end>Réserver</button>
-                          </ion-item>
+              <ion-thumbnail item-start>
+                <img src="../../assets/imgs/560_315.jpg"/>
+              </ion-thumbnail>
+              <h2>Chambre simple</h2>
+              <p>10000 XFA</p>
+              <button ion-button  item-end color="yellow">Réserver</button>
+            </ion-item>
+          
           </ion-list>
 
-        <ion-card>
-                <img src="../../assets/imgs/560_315.jpg"/>
-                <ion-card-content>
-                <ion-row>
-                    <ion-col col-6 >
-                        <div style="color: rgba(34,16,65,1);font-size: x-large">
-                           <ion-icon name="wifi"></ion-icon> 
-                            <ion-icon name="cart"></ion-icon> 
-                            <ion-icon name="home"></ion-icon>
-                        </div>
-                       <span style="font-size: 20px;font-weight: bold">1200 €</span>
-                    </ion-col>
-                    <ion-col col-6>
-                        <button ion-button color="yellow">Réserver</button>
-                    </ion-col>
-                </ion-row>
-                </ion-card-content>
-              </ion-card>
+       
              
   </ion-content>
   
