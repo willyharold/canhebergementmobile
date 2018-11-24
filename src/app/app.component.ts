@@ -12,7 +12,7 @@ import { HebergementPage } from '../pages/hebergement/hebergement';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = DetailshotelPage;
+  rootPage:any = TabsPage;
 
   constructor(platform: Platform, statusBar: StatusBar,
      splashScreen: SplashScreen) {
