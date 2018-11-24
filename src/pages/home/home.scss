@@ -1,6 +1,7 @@
 page-home {
     .card-background-page {
-        background-color: rgba(34,16,65,1);
+        background-color: rgba(80, 6, 87,1);
+        
         ion-card {
           position: relative;
           text-align: center;
@@ -23,13 +24,9 @@ page-home {
           width: 100%;
           color: #fff;
         }
-
-        ion-row{
-            margin-top: 20px
-            
-        }
+        
         .img{
-          width: 100;
+          width: 100%;
           height: 100%;
         }
     }

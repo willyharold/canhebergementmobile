@@ -1,5 +1,5 @@
 <ion-header>
-        <ion-navbar color="violet">
+        <ion-navbar color="header">
           <ion-title >
             
                <img src="../assets/imgs/logo1.svg" alt="logo"  style="width: 15%;height: 20%;color: white;margin-right: 30px">
@@ -8,44 +8,40 @@
         </ion-navbar>
       </ion-header>
 
-<ion-content class="card-background-page">
-        <ion-row>
-                
-           <ion-item style="width: 90%;margin-left: 20px">
-                <ion-input class="input" type="text" placeholder="Que recherchez-vous?" [(ngModel)]="password"></ion-input>
-             </ion-item>
-            <ion-row>
-                 <ion-col col-6 >
-                    <ion-item style="width: 90%;margin-left: 15px">
-                      <ion-input class="input" type="date" [(ngModel)]="dateA"></ion-input>
-                    </ion-item>
-                 </ion-col>
-                 <ion-col col-6>
-                    <ion-item style="width: 90%;margin-left: 5px">
-                        <ion-input class="input" type="date" [(ngModel)]="dateP"></ion-input>
-                     </ion-item>
-                </ion-col>
-            </ion-row>
-              <button (tap)="openHotel()" ion-button style="width: 90%;margin-left: 20px" color="yellow">Appliquez</button>
-            </ion-row>
-        <ion-card>
-          <img src="../../assets/imgs/images.jpeg" alt="Image" class="img"/>
-          <div class="card-title">HILTON HOTEL</div>
-          <div class="card-subtitle">Centre ville</div>
-        </ion-card>
+<ion-content class="card-background-page">                
+    
+    <ion-row padding>
+        <button ion-button block color="light" icon-start>
+            <ion-icon name="search"></ion-icon>
+          Que recherchez-vous ?
+        </button>
+          <ion-col>
+            <ion-item>
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="arrive" placeholder="Arrivée"></ion-datetime>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item >
+              <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="depart" placeholder="Départ"></ion-datetime>
+              </ion-item>
+        </ion-col>
+        <button (tap)="openHotel()" ion-button color="yellow" block  >Recherchez</button>
+
+    </ion-row>
+
         <ion-card>
             <img src="../../assets/imgs/images (1).jpeg"  alt="Image" class="img"/>
             <div class="card-title">MERINA HOTEL</div>
             <div class="card-subtitle">Ngousso</div>
-            </ion-card>
-            <ion-card>
-                    <img src="../../assets/imgs/téléchargement.jpeg" alt="Image" class="img"/>
-                      <div class="card-title">São Paulo</div>
-                    <div class="card-subtitle">41 Listings</div>
-             </ion-card>
-             <ion-card>
-                    <img src="../../assets/imgs/téléchargement (2).jpeg" alt="Image" class="img"/>
-                    <div class="card-title">São Paulo</div>
-                    <div class="card-subtitle">41 Listings</div>
-                  </ion-card>
+        </ion-card>
+        <ion-card>
+                <img src="../../assets/imgs/téléchargement.jpeg" alt="Image" class="img"/>
+                  <div class="card-title">São Paulo</div>
+                <div class="card-subtitle">41 Listings</div>
+        </ion-card>
+        <ion-card>
+          <img src="../../assets/imgs/téléchargement (2).jpeg" alt="Image" class="img"/>
+          <div class="card-title">São Paulo</div>
+          <div class="card-subtitle">41 Listings</div>
+        </ion-card>
 </ion-content>
