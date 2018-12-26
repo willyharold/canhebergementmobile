@@ -13,6 +13,8 @@ import { SuperTabsModule } from  'ionic2-super-tabs' ;
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetailshotelPage } from '../pages/detailshotel/detailshotel';
+import { DadawebProvider } from '../providers/dadaweb/dadaweb';
+import { HTTP } from '@ionic-native/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { DetailshotelPage } from '../pages/detailshotel/detailshotel';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DadawebProvider,
+    HTTP
   ]
 })
 export class AppModule {}

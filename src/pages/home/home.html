@@ -29,19 +29,9 @@
 
     </ion-row>
 
-        <ion-card>
+        <ion-card *ngFor="let part of partenaire">
             <img src="../../assets/imgs/images (1).jpeg"  alt="Image" class="img"/>
-            <div class="card-title">MERINA HOTEL</div>
-            <div class="card-subtitle">Ngousso</div>
-        </ion-card>
-        <ion-card>
-                <img src="../../assets/imgs/téléchargement.jpeg" alt="Image" class="img"/>
-                  <div class="card-title">São Paulo</div>
-                <div class="card-subtitle">41 Listings</div>
-        </ion-card>
-        <ion-card>
-          <img src="../../assets/imgs/téléchargement (2).jpeg" alt="Image" class="img"/>
-          <div class="card-title">São Paulo</div>
-          <div class="card-subtitle">41 Listings</div>
+            <div class="card-title">{{part.nom}}</div>
+            <div class="card-subtitle">{{part.quartier}}</div>
         </ion-card>
 </ion-content>
